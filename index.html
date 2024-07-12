@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Roy B. Quirante</title>
+    <link rel = "stylesheet" href = "style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <div class = "left-fb">
+
+        <div class = "main-info-fb">
+            <img src = "./pfp.png">
+            <h4>Julian Roy B. Quirante</h4>
+            <p>Undergraduate Student in De La Salle University</p>
+            <p>Major in Software Technology </p>
+        </div>
+
+        <div class = "other-personal-fb">
+            <div class = "horizontal-info-fb">
+                <p><b>Residence:</b> Zambales</p>
+            </div>
+            <div class = "horizontal-info-fb">
+                <p><b>City:</b> Olongapo</p>
+            </div>
+            <div class = "horizontal-info-fb">
+                <p><b>Age:</b> 21</p>
+            </div>
+
+
+            
+        </div>
+
+        <div class = "divider"></div>
+
+        <div class = "progress-bars-fb">
+                
+                <label for = "bar">HTML</label>
+                <progress id = "bar" max = "100" value = "90"></progress>
+
+                <label for = "bar1">CSS</label>
+                <progress id = "bar1" max = "100" value = "70"></progress>
+
+                <label for = "bar4">NodeJS</label>
+                <progress id = "bar6" max = "100" value = "80"></progress>
+
+                <label for = "bar5">Mongoose</label>
+                <progress id = "bar5" max = "100" value = "80"></progress>
+
+                <label for = "bar2">C</label>
+                <progress id = "bar2" max = "100" value = "60"></progress>
+
+                <label for = "bar3">Java</label>
+                <progress id = "bar" max = "100" value = "70"></progress>
+
+                <label for = "bar7">Python</label>
+                <progress id = "bar7" max = "100" value = "60"></progress>
+            
+        </div>
+
+        <div class = "divider"></div>
+
+        <div class = "others-fb">
+            <a href = "./Quirante-CV.pdf" target ="_blank">Open Curriculum Vitae</a>
+            <h4>Contacts</h4>
+            <p>julrquirante@gmail.com</p>
+            <p>julian_quirante@dlsu.edu.ph</p>
+            <p>+63 977 631 5833</p>
+            
+        </div>
+
+        <div class = "socials-fb">
+            <a href = https://github.com/Jul611 target ="_blank">
+                <img src = "./github.png">
+            </a>
+
+            <a href = https://www.instagram.com/jul_quirante/?hl=en target ="_blank">
+                <img src = "./instagram.png">
+            </a>
+
+            <a href = https://www.facebook.com/quirantejulian/ target ="_blank">
+                <img src = "./facebook.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="right-fb">
+        <h2>Projects Preview</h2>
+        <div class="display-project">
+            <p>Select a Project to Preview</p>
+        </div>
+    
+        <div class="traits-fb">
+            <p>Critical-thinking Skills</p>
+            <p>Problem-solving Skills</p>
+            <p>Time-management Skills</p>
+            <p>Team-oriented</p>
+        </div>
+
+        <h2>Highlighted Projects</h2>
+    
+        <div class="projects-fb">
+
+            <div class="project-item">
+                <h4>Lab Rat</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+                <button data-image="./labrat.png">Preview</button>
+            </div>
+    
+            <div class="project-item">
+                <h4>HOA Management</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+                <button data-image="./hoa.png">Preview</button>
+            </div>
+    
+            <div class="project-item">
+                <h4>TSUIMIA</h4>
+                <p>A robotics innovative category project made of recycled materials which uses various sensors for signs of tsunami and illicit activities like blast fishing. This project competed in the School Division Level Science Fair 2019, Regional Level Science Fair 2019, and the 17th National Science Quest (ASEP) competition.</p>
+                <button data-image="./tsunamia.png">Preview</button>
+            </div>
+    
+            <div class="project-item">
+                <h4>Personal Hobby Guide and Information</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+                <button data-image="./hobby.png">Preview</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const displayProjectDiv = document.querySelector('.display-project');
+    const previewButtons = document.querySelectorAll('.project-item button');
+
+    previewButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const imagePath = this.getAttribute('data-image');
+            displayProjectDiv.innerHTML = `<img src="${imagePath}" alt="Project Preview">`;
+        });
+    });
+});
+</script>
+
+
+
+
+
